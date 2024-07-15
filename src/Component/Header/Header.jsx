@@ -6,7 +6,7 @@ export default class Header extends Component {
     <header className="flex justify-between items-center fixed top-0 left-0 right-0  p-6 z-10 "> 
 
           <div className="flex ">
-            <span className="text-sky-500 font-extrabold text-3xl font-serif">FILMY</span>
+            <span className="text-sky-500 font-extrabold text-3xl font-serif ">FILMY</span>
             <span className="text-white font-extrabold text-3xl font-serif ml-1">ZILLA</span>
           </div>
           

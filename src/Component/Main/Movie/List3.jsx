@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Slider.css'; 
 
-export default class List1 extends Component {
+export default class List3 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -24,20 +24,20 @@ export default class List1 extends Component {
             <>
                 {/* High Rated Movies */}
 
-                <div className=" overflow-hidden px-19 mb-20 ">
-                    <h2 className="text-2xl font-bold text-center shadow-md shadow-cyan-300 mx-20 my-10 py-1 bg-gray-800 text-white"> High Rated Movies </h2>
-                    <div className=" flex space-x-4 overflow-x-scroll  movie-slider ">
+                <div className=" overflow-hidden px-20 mb-20">
+                    <h2 className="text-2xl font-bold text-center mx-20 my-10 shadow-md shadow-cyan-300 py-1 bg-gray-800 text-white">High Rated Movies</h2>
+                    <div className=" flex space-x-4 overflow-x-scroll movie-slider ">
                         {movies.length > 0 ? (
                             movies.map((movie) => (
                                     <a href=''>
-                                <div key={movie.id} className=" bg-slate-950 rounded-lg shadow-md h-[20rem] hover:shadow-sky-100 p-4 min-w-[200px]">
+                                <div key={movie.id} className=" bg-slate-950 rounded-lg h-[20rem]  shadow-md hover:shadow-sky-100 p-4 min-w-[200px]">
                                     <img
                                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                                         alt={movie.title}
                                         className="w-[10rem] h-[12rem] object-cover rounded-md"
                                     />
-                                  <h3 className="text-lg font-semibold mt-2 text-sky-400">Name : <p className=' hover:text-sky-400 text-white'>{movie.title} </p> </h3>
-                                    <p className="text-sm text-gray-400">Release Date :{movie.release_date}</p>
+                                  <h3 className="text-sm font-semibold mt-2 text-white">Name : <h className='text-white hover:text-sky-400 '>{movie.title} </h></h3>
+                                    <p className="text-xs text-gray-400"> Release Date :{movie.release_date}</p>
                                 </div>
                                  </a>
                             ))
@@ -46,7 +46,7 @@ export default class List1 extends Component {
                         )}
                     </div>
                 </div>
-            </>
+              </>
         );
     }
 }

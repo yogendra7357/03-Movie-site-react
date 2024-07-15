@@ -26,6 +26,7 @@ export default class List1 extends Component {
                
                 <div className=" overflow-hidden px-20">
                     <h2 className="text-2xl font-bold text-center mx-20 my-10 py-1 shadow-md shadow-cyan-300 bg-gray-800 text-white">New Latest Movies</h2>
+
                     <div className=" flex space-x-4 overflow-x-scroll movie-slider ">
                         {movies.length > 0 ? (
                             movies.map((movie) => (
@@ -45,6 +46,7 @@ export default class List1 extends Component {
                             <p className="text-white">Loading movies...</p>
                         )}
                     </div>
+                  
                 </div>
             </>
         );

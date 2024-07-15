@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Slider.css'; 
 
-export default class List1 extends Component {
+export default class List2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
