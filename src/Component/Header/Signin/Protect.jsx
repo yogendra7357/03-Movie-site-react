@@ -8,7 +8,7 @@ const Protect = (props) => {
     useEffect(() =>{
         let Signin = localStorage.getItem('isSignin');
 
-        if(!Signin) { setOk(false) } },[]);
+        if(!Signin) { setOk(false)}} ,[]);
 
         if (!isok) {
             return <Navigate to="/Signin" />;

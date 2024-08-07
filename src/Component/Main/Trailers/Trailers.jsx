@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import List1 from './List1';
 import List2 from './List2';
 import List3 from './List3';
-import Slider from "../Movie/Slider";
+import Slider from '../Movie/Slider';
 import "../../../ComponentsCSS/Trailers.css"
 
 
-export default class Movies extends Component {
+export default class Trailers extends Component {
 
 
     

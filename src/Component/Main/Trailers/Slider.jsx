@@ -11,7 +11,7 @@ export default class Slider extends Component {
   };
 
   componentDidMount() {
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=dca3eb673395664b24c0b77b5e2da6fc&language=en-US&page=1')
+    fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=dca3eb673395664b24c0b77b5e2da6fc&language=en-US&page=1')
       .then((response) => response.json())
       .then((jsonResponse) => {
         this.setState({ movies: jsonResponse.results, loading: false });

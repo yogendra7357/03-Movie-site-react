@@ -34,7 +34,8 @@ export default class Signup extends Component {
     else {this.setState({ success: "Signup successful" });
     window.localStorage.setItem("isSignup", JSON.stringify({ email, password }));
 
-       window.location.href = '/Signin'   }
+     
+    window.location.href = '/Signin'   }
   };
 
   render() {    

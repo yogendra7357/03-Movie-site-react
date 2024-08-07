@@ -81,9 +81,9 @@ export default class Signin extends Component {
                 Sign in
               </button>
 
-              <a href="#" className="text-white text-lg m-4 ml-[5rem] hover:text-sky-600">
+              <Link to="/Forgot" className="text-white text-lg m-4 ml-[5rem] hover:text-sky-600">
                 Forgot password?
-              </a>
+              </Link>
 
               <p className="ml-2 text-gray-400">
                 New to Filmyzilla? <Link to="/Signup" className="text-white hover:text-sky-600">Sign up now.</Link>
